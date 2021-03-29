@@ -29,34 +29,26 @@ public class Main {
         doubleNumber = i;
         System.out.print(doubleNumber);
 
-        //switch case
-        int day = 4;
-        switch (day) {
-            case 1:
-                System.out.println("Monday");
-                break;
-            case 2:
-                System.out.println("Tuesday");
-                break;
-            case 3:
-                System.out.println("Wednesday");
-                break;
-            case 4:
-                System.out.println("Thursday");
-                break;
-            case 5:
-                System.out.println("Friday");
-                break;
-            case 6:
-                System.out.println("Saturday");
-                break;
-            case 7:
-                System.out.println("Sunday");
-                break;
+        //for loops
+
+        int sum = 0;
+        int n = 1000;
+
+        // for loop
+        for (int k = 1; k <= n; ++k) {
+            // body inside for loop
+            sum += i;     // sum = sum + i
         }
 
+        System.out.println("Sum = " + sum);
 
-        //for loops
+        int p = 5;
+
+        // for loop
+        for (int m = 1; m <= p; ++m) {
+            System.out.println("Java is fun");
+        }
+
 
         for (int x = 0; x < 10; x++) {
             System.out.print(x);
@@ -66,16 +58,12 @@ public class Main {
 
         // addition operator
         System.out.println("a + b = " + (a + b));
-
         // subtraction operator
         System.out.println("a - b = " + (a - b));
-
         // multiplication operator
         System.out.println("a * b = " + (a * b));
-
         // division operator
         System.out.println("a / b = " + (a / b));
-
         // modulo operator
         System.out.println("a % b = " + (a % b));
 
@@ -137,7 +125,6 @@ public class Main {
         b4 >>= 3;
         System.out.println(b4);
 
-
         // Widening casting
         // byte -> short -> char -> int -> long -> float -> double
 
@@ -152,8 +139,35 @@ public class Main {
         double mySecondDouble = 9.23;
         short mySecondShort = (short) mySecondDouble;
 
-        System.out.println(mySecondDouble);
-        System.out.println(mySecondShort);
+        System.out.println("mySecondDouble: " + mySecondDouble);
+        System.out.println("mySecondShort: " + mySecondShort);
+
+
+        //switch case
+        int day = 4;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+        }
 
     }
 
