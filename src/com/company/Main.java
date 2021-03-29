@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
         //Primitive
         int wholeNumbers = 122;
         long LargeDecimalNumbers = -12;
@@ -27,9 +27,9 @@ public class Main {
         double doubleNumber;
         int i = 23;
         doubleNumber = i;
-            System.out.print(doubleNumber);
+        System.out.print(doubleNumber);
 
-            //switch case
+        //switch case
         int day = 4;
         switch (day) {
             case 1:
@@ -62,26 +62,22 @@ public class Main {
             System.out.print(x);
         }
         //Arithmetic Operators
+        int a = 12, b = 5;
 
-        int x = 10;
-        int y = 20;
-        int result = x + y;
-        System.out.println(result);
+        // addition operator
+        System.out.println("a + b = " + (a + b));
 
-        int a, b;
-        a = 10;
-        b = (a == 1) ? 20: 30;
-        System.out.println( "Value of b is : " +  b );
+        // subtraction operator
+        System.out.println("a - b = " + (a - b));
 
-        b = (a != 10) ? 20: 30;
-        System.out.println( "Value of b is : " + b );
+        // multiplication operator
+        System.out.println("a * b = " + (a * b));
 
-        a = 5;
-        b = 2;
-        if (a > b) {
+        // division operator
+        System.out.println("a / b = " + (a / b));
 
-            System.out.println("x is greater than y");
-        }
+        // modulo operator
+        System.out.println("a % b = " + (a % b));
 
         a = 5;
         b = 2;
@@ -127,5 +123,38 @@ public class Main {
         System.out.println(incrementOp3);
         int incrementOp4 = incrementOp1 * --incrementOp2;
         System.out.println(incrementOp4);
+
+        byte b2 = 127;
+        b2 %= 7;
+        System.out.println(b2);
+        byte b3 = 120;
+        b3 &= 40;
+        System.out.println(b3);
+        short s1 = 300;
+        s1 ^= 100;
+        System.out.println(s1);
+        byte b4 = 127;
+        b4 >>= 3;
+        System.out.println(b4);
+
+
+        // Widening casting
+        // byte -> short -> char -> int -> long -> float -> double
+
+        short myShort = 9;
+        double myDouble = myShort;
+
+        System.out.println(myShort);
+        System.out.println(myDouble);
+
+         // Narrowing casting
+
+        double mySecondDouble = 9.23;
+        short mySecondShort = (short) mySecondDouble;
+
+        System.out.println(mySecondDouble);
+        System.out.println(mySecondShort);
+
     }
+
 }
