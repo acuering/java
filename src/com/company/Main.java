@@ -1,4 +1,5 @@
 package com.company;
+import java.util.Scanner;
 
 public class Main {
 
@@ -83,15 +84,15 @@ public class Main {
 
         // COMPOUND ASSIGNMENT OPERATORS
         int number = 5;
-        number    +=  3;
+        number += 3;
         System.out.println(number);
-        number    -=  3;
+        number -= 3;
         System.out.println(number);
-        number    *=  3;
+        number *= 3;
         System.out.println(number);
-        number    /=  3;
+        number /= 3;
         System.out.println(number);
-        number    %=  3;
+        number %= 3;
         System.out.println(number);
 
         //INCREMENT AND DECREMENT OPERATORS
@@ -99,7 +100,7 @@ public class Main {
         banana++;
         System.out.println(banana);
 
-        int bananas= 20;
+        int bananas = 20;
         bananas--;
         System.out.println(bananas);
 
@@ -134,7 +135,7 @@ public class Main {
         System.out.println(myShort);
         System.out.println(myDouble);
 
-         // Narrowing casting
+        // Narrowing casting
 
         double mySecondDouble = 9.23;
         short mySecondShort = (short) mySecondDouble;
@@ -169,6 +170,34 @@ public class Main {
                 break;
         }
 
-    }
+        int k = 1, h = 10;
 
+        // while loop from 1 to 5
+        while (k <= h) {
+            System.out.println(k);
+            k++;
+        }
+
+        Scanner input = new Scanner(System.in);
+
+        int myNumber;
+        System.out.println("Enter a number");
+        myNumber = input.nextInt();
+        while (myNumber <= 5) {
+            System.out.print("[" + myNumber + "]");
+            myNumber++;
+        }
+
+
+        int K=0;
+        int P=5;
+        do {
+            ++K;
+            System.out.print(K*2);
+        }
+            while(K<=4);
+    }
 }
+
+
+
